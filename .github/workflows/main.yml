@@ -1,21 +1,21 @@
-name: Windows - RustDesk
+name: Windows -- Created by Hamza_
 
 on:
   workflow_dispatch:
 
 jobs:
   build:
-    name: Start Building...
+    name: Building 😁
     runs-on: windows-latest
     timeout-minutes: 9999
     
     steps:
-      - name: Downloading & Installing Essentials
+      - name: Downloading & Installing Essentials 😉
         run: |
           Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/kjls7t08bhc7q0u5t31b0/Downloads.bat?rlkey=pu6s3hcls04ronzrs0h582hsg&dl=1" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
-      - name: Log In To AnyDesk
+      - name: Log In To RustDesk
         run: cmd /c show.bat
 
       - name: Time Counter
